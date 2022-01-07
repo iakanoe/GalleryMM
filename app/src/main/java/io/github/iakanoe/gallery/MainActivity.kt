@@ -1,8 +1,8 @@
-package io.github.iakanoe.gallerymm
+package io.github.iakanoe.gallery
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import io.github.iakanoe.gallerymm.ui.main.MainFragment
+import io.github.iakanoe.gallery.ui.collection.CollectionFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, MainFragment.newInstance())
+                .replace(R.id.container, CollectionFragment.newInstance())
                 .commitNow()
         }
     }

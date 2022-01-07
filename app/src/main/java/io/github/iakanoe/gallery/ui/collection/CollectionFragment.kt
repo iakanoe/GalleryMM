@@ -1,4 +1,4 @@
-package io.github.iakanoe.gallerymm.ui.main
+package io.github.iakanoe.gallery.ui.collection
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,15 +6,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import io.github.iakanoe.gallerymm.R
+import io.github.iakanoe.gallery.R
 
-class MainFragment : Fragment() {
+class CollectionFragment : Fragment() {
 
     companion object {
-        fun newInstance() = MainFragment()
+        fun newInstance() = CollectionFragment()
     }
 
-    private lateinit var viewModel: MainViewModel
+    private lateinit var viewModel: CollectionViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,7 +25,7 @@ class MainFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(CollectionViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

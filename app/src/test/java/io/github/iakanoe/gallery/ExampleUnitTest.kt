@@ -1,4 +1,4 @@
-package io.github.iakanoe.gallerymm
+package io.github.iakanoe.gallery
 
 import org.junit.Test
 
