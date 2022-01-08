@@ -22,5 +22,5 @@ object RetrofitModule {
         .build()
 
     @Provides
-    fun provideAlbumAPI(retrofit: Retrofit) = retrofit.create(AlbumAPI::class.java)
+    fun provideAlbumAPI(retrofit: Retrofit): AlbumAPI = retrofit.create(AlbumAPI::class.java)
 }

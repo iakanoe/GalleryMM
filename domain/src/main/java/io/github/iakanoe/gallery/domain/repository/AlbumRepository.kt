@@ -4,5 +4,5 @@ import io.github.iakanoe.gallery.domain.model.Album
 import kotlinx.coroutines.flow.Flow
 
 interface AlbumRepository {
-    fun getAll(): Flow<Album>
+    suspend fun getAllEmpty(): List<Album>
 }

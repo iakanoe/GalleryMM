@@ -1,5 +1,6 @@
 package io.github.iakanoe.gallery.ui.collection
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
+import io.github.iakanoe.gallery.R
 import io.github.iakanoe.gallery.databinding.CollectionFragmentBinding
 import io.github.iakanoe.gallery.domain.model.Album
 import io.github.iakanoe.gallery.ui.common.ClickableListAdapter
@@ -20,6 +22,11 @@ class CollectionFragment : Fragment(), ClickableListAdapter.OnItemClickListener<
     private val viewModel: CollectionViewModel by viewModels()
     private var binding: CollectionFragmentBinding? = null
     private val adapter = CollectionAdapter(this)
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        activity?.setTitle(R.string.fragment_collection_title)
+    }
 
     override fun onStart() {
         super.onStart()
