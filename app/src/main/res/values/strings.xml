@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">GalleryMM</string>
+
+    <string name="fragment_collection_title">All Albums</string>
+
+    <string name="collection_loading_error_text">There\'s been an error while loading your albums.</string>
+    <string name="album_loading_error_text">There\'s been an error while loading your album\'s photos.</string>
+    <string name="photo_loading_error_text">There\'s been an error while loading your photo.</string>
 </resources>
