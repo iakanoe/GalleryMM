@@ -1,7 +1,8 @@
-package io.github.iakanoe.gallery
+package io.github.iakanoe.gallery.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import io.github.iakanoe.gallery.R
 import io.github.iakanoe.gallery.ui.collection.CollectionFragment
 
 class MainActivity : AppCompatActivity() {

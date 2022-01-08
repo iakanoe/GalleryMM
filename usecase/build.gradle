@@ -9,5 +9,7 @@ java {
 }
 
 dependencies {
-    implementation project(":domain")
+    api project(":domain")
+
+    implementation "javax.inject:javax.inject:1"
 }
