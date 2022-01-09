@@ -26,10 +26,14 @@
             app:argType="io.github.iakanoe.gallery.domain.model.Album" />
         <action
             android:id="@+id/openPhotoDetails"
-            app:destination="@id/placeholder" />
+            app:destination="@id/photoFragment" />
     </fragment>
 
-    <fragment android:id="@+id/placeholder">
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="io.github.iakanoe.gallery.ui.photo.PhotoFragment"
+        android:label="photo_fragment"
+        tools:layout="@layout/photo_fragment">
 
         <argument
             android:name="photo"

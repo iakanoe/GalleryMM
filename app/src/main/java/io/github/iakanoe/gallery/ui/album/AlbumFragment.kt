@@ -1,6 +1,5 @@
 package io.github.iakanoe.gallery.ui.album
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +14,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import io.github.iakanoe.gallery.R
 import io.github.iakanoe.gallery.databinding.AlbumFragmentBinding
 import io.github.iakanoe.gallery.domain.model.Photo
+import io.github.iakanoe.gallery.ui.MainActivity
 import io.github.iakanoe.gallery.ui.common.ClickableListAdapter
 
 @AndroidEntryPoint
@@ -23,11 +23,6 @@ class AlbumFragment : Fragment(), ClickableListAdapter.OnItemClickListener<Photo
     private var binding: AlbumFragmentBinding? = null
     private val adapter = AlbumAdapter(this)
     private val args: AlbumFragmentArgs by navArgs()
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        activity?.setTitle(R.string.fragment_album_title)
-    }
 
     override fun onStart() {
         super.onStart()
@@ -68,5 +63,13 @@ class AlbumFragment : Fragment(), ClickableListAdapter.OnItemClickListener<Photo
 
     override fun onItemClick(item: Photo) {
         findNavController().navigate(AlbumFragmentDirections.openPhotoDetails(item))
+    }
+
+    override fun onResume() {
+        super.onResume()
+        (activity as? MainActivity)?.run {
+            setTitle(R.string.fragment_album_title)
+            setBackButtonVisibility(true)
+        }
     }
 }
