@@ -2,6 +2,7 @@
     <string name="app_name">GalleryMM</string>
 
     <string name="fragment_collection_title">All Albums</string>
+    <string name="fragment_album_title">My Album</string>
 
     <string name="collection_loading_error_text">There\'s been an error while loading your albums.</string>
     <string name="album_loading_error_text">There\'s been an error while loading your album\'s photos.</string>

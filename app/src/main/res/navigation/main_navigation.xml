@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/collectionFragment">
+
+    <fragment
+        android:id="@+id/collectionFragment"
+        android:name="io.github.iakanoe.gallery.ui.collection.CollectionFragment"
+        android:label="collection_fragment"
+        tools:layout="@layout/collection_fragment">
+
+        <action
+            android:id="@+id/openAlbum"
+            app:destination="@id/albumFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/albumFragment"
+        android:name="io.github.iakanoe.gallery.ui.album.AlbumFragment"
+        android:label="album_fragment"
+        tools:layout="@layout/album_fragment">
+
+        <argument
+            android:name="album"
+            app:argType="io.github.iakanoe.gallery.domain.model.Album" />
+        <action
+            android:id="@+id/openPhotoDetails"
+            app:destination="@id/placeholder" />
+    </fragment>
+
+    <fragment android:id="@+id/placeholder">
+
+        <argument
+            android:name="photo"
+            app:argType="io.github.iakanoe.gallery.domain.model.Photo" />
+    </fragment>
+</navigation>

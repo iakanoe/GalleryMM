@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ianick.noejovich/Desktop/GalleryMM/app/src/main/res/drawable/collection_item_foreground.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/ianick.noejovich/Desktop/GalleryMM/app/src/main/res/drawable/loading_placeholder.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/ianick.noejovich/Desktop/GalleryMM/app/src/main/res/layout/album_fragment.xml" value="0.371875" />
+        <entry key="..\:/Users/ianick.noejovich/Desktop/GalleryMM/app/src/main/res/layout/album_item.xml" value="0.371875" />
         <entry key="..\:/Users/ianick.noejovich/Desktop/GalleryMM/app/src/main/res/layout/collection_fragment.xml" value="0.33" />
         <entry key="..\:/Users/ianick.noejovich/Desktop/GalleryMM/app/src/main/res/layout/collection_item.xml" value="0.371875" />
         <entry key="..\:/Users/ianick.noejovich/Desktop/GalleryMM/app/src/main/res/layout/main_activity.xml" value="0.371875" />

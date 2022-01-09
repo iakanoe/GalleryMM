@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
@@ -67,6 +68,6 @@ class CollectionFragment : Fragment(), ClickableListAdapter.OnItemClickListener<
     }
 
     override fun onItemClick(item: Album) {
-        TODO("Not yet implemented")
+        findNavController().navigate(CollectionFragmentDirections.openAlbum(item))
     }
 }
